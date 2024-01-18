@@ -1,0 +1,20 @@
+.corner {
+  z-index: 99999;
+}
+.githubcorner:hover .octoarm {
+  animation: octocatwave 560ms ease-in-out;
+}
+@keyframes octocatwave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}

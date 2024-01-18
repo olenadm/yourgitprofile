@@ -1,23 +1,21 @@
-import Head from "next/head";
+
 import Router from "next/router";
-import { DM_Sans } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { GitHub } from "react-feather";
 import { useState } from "react";
 
-const dm = DM_Sans({ subsets: ["latin"] });
+
 
 export default function Home() {
   const [username, setUsername] = useState("");
   const handleChange = (e) => setUsername(e.target.value);
 
   const d = new Date();
-  var day = d.toLocaleString("default", { weekday: "long" })  
- 
+  var day = d.toLocaleString("default", { weekday: "long" });
+
   return (
     <>
-      <Head/>
-      <main className={`${styles.main} ${dm.className}`}>
+     <div className={styles.main}>
         <div className={styles.description}>
           <p>
             {day} needs some colour.
@@ -30,21 +28,27 @@ export default function Home() {
             onSubmit={(e) => {
               e.preventDefault();
               Router.push({
-                pathname: "/user/" + username,
-                //query: { id: username },
+                pathname: `/user/${username}`,
+               // query: { username: username },
+
               });
             }}
           >
             <label htmlFor="username" className={styles.label}>
-            <GitHub size={35} /> <span>Find Your Profile</span>
+              <GitHub size={35} /> <span>Find Your Profile</span>
             </label>
-            <input name="username" type="text" onChange={handleChange} className={styles.form}/>
+            <input
+              name="username"
+              type="text"
+              onChange={handleChange}
+              className={styles.form}
+            />
           </form>
         </div>
 
         <div className={styles.grid}>
           <a
-            href="#"
+            href="https://github.com/olenadm/yourgitprofile"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -52,7 +56,8 @@ export default function Home() {
             <p>Built with Next.js· ·GitHub Polyglot· </p>
           </a>
         </div>
-      </main>
+        </div>
+    
     </>
   );
 }

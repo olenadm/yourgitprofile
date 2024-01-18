@@ -1,0 +1,42 @@
+.repos {
+  padding: 0.5rem 2.5rem 2.5rem;
+  position: relative;
+}
+
+.repos > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+  grid-gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.repos > ul > li {
+  list-style-type: none;
+  border: 1px solid #d3d5d825;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(2, 151, 180, 0.25),
+    0 0.0625rem 0.0625rem rgba(2, 151, 180, 0.16);
+  padding: 0.5rem 1rem;
+}
+
+.repos > ul > li > p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #041527;
+}
+
+.repos > ul > li .repostats {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  font-size: 13px;
+  color: rgb(106, 115, 125);
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+.repostats span {
+  color: var(--salad);
+  font-size: 13px;
+}
+

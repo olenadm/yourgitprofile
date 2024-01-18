@@ -3,18 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@octokit/core": "^5.0.2",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
     "react-feather": "^2.0.10"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "14.0.4"
   }
