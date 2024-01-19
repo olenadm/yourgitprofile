@@ -2,6 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import styles from "./Repos.module.css";
 import { Box } from "react-feather";
+import langColors from "./utils/langColors";
+import { Target } from "react-feather";
 
 export default function Repos(data) {
   const { repoData } = data;
@@ -37,11 +39,18 @@ export default function Repos(data) {
         <>
           {topRepos.map((repo) => (
             <li key={repo.id}>
-              <h3><Box size={18} color="#888"/> {repo.name}</h3>
+              <h3>
+                <Box size={18} color="#888" /> {repo.name}
+              </h3>
               <p>{repo.description}</p>
               <div className={styles.repostats}>
                 <div className={styles.left}>
-                  <div className={styles.language}>{repo.language}</div>
+                  {repo.language && (
+                    <div className={styles.language}>
+                      <Target color={langColors[repo.language]} size={16} />
+                      {repo.language}
+                    </div>
+                  )}
                 </div>
                 <div className={styles.right}>
                   {" "}

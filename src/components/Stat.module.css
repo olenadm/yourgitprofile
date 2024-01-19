@@ -5,10 +5,13 @@
     border-radius: 0.5rem;
     padding: 5px;
     width: 300px;
-    margin: -50px auto 15px;
+    margin:-40px auto 0;
     color: #000;
     text-align: center;
     border-bottom: 2px solid var(--salad);
+    z-index:99;
+    position:relative;
+    
   }
   .stat div {
     padding: 5px 5px;

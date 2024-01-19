@@ -1,7 +1,11 @@
 .corner {
+  z-index: 9999;
+}
+.githubcorner {
   z-index: 99999;
 }
-.githubcorner:hover .octoarm {
+
+.githubcorner:hover > .octoarm {
   animation: octocatwave 560ms ease-in-out;
 }
 @keyframes octocatwave {
