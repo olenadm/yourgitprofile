@@ -15,6 +15,7 @@ export default function User() {
 
   const router = useRouter();
   const username = router.query.username;
+  
 
   const getUserData = () => {
     fetch(`https://api.github.com/users/${username}`)
@@ -52,10 +53,14 @@ export default function User() {
       });
   };
 
+  
+
   useEffect(() => {
+    if(router.isReady){
     getUserData();
     getRepoData();
-  }, []);
+    }
+  }, [router.isReady]);
 
   return (
     <>
