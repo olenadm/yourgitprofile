@@ -1,10 +1,7 @@
-
 import Router from "next/router";
 import styles from "@/styles/Home.module.css";
 import { GitHub } from "react-feather";
 import { useState } from "react";
-
-
 
 export default function Home() {
   const [username, setUsername] = useState("");
@@ -15,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-     <div className={styles.main}>
+      <div className={styles.main}>
         <div className={styles.description}>
           <p>
             {day} needs some colour.
@@ -29,8 +26,7 @@ export default function Home() {
               e.preventDefault();
               Router.push({
                 pathname: `/user/${username}`,
-               // query: { username: username },
-
+                // query: { username: username },
               });
             }}
           >
@@ -53,11 +49,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p>Built with Next.js· ·GitHub Polyglot· </p>
+            <p>Built with Next.js· ·GitHub Polyglot· Grid CSS </p>
           </a>
         </div>
-        </div>
-    
+      </div>
     </>
   );
 }

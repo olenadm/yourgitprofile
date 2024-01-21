@@ -1,0 +1,21 @@
+.card {
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  border: var(--card-border);
+  background-color: #e7f8fb;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 43%;
+}
+
+.card svg {
+  margin-right: 5px;
+}
+.card .info__item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.sides > div {
+  padding: 0 15px;
+}

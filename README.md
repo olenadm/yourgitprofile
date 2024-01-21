@@ -1,11 +1,11 @@
 # GitProfile
 
-A nicer look at your GitHub Profile.
+A nicer look at your GitHub Profile. Built with Grid CSS without the use of Media queries.
 
 Built with:
 
 - [Next.js](https://nextjs.org/)
-- CSS Grid without use of Media Queries
+- CSS Grid 
 
 ## Getting Started
 

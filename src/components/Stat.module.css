@@ -1,28 +1,26 @@
 .stat {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background: #f2f9fd;
-    border-radius: 0.5rem;
-    padding: 5px;
-    width: 300px;
-    margin:-40px auto 0;
-    color: #000;
-    text-align: center;
-    border-bottom: 2px solid var(--salad);
-    z-index:99;
-    position:relative;
-    
-  }
-  .stat div {
-    padding: 5px 5px;
-  }
-  .stat div .num {
-    color: #000;
-    font-weight: 700;
-    font-size: 1.2rem;
-  }
-  .stat div .numlabel {
-    font-size: 12px;
-    color: rgb(91 107 126);
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #f2f9fd;
+  border-radius: 0.5rem;
+  padding: 5px;
+  width: 300px;
+  margin: -70px auto 0;
+  color: #000;
+  text-align: center;
+  border-bottom: 2px solid var(--salad);
+  z-index: 99;
+  position: relative;
+}
+.stat div {
+  padding: 5px 5px;
+}
+.stat div .num {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.stat div .numlabel {
+  font-size: 12px;
+  color: rgb(91 107 126);
+}

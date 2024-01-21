@@ -1,17 +1,16 @@
 .wrap {
   position: relative;
   display: grid;
-  /* grid-template-columns: 200px 1fr;*/
   grid-template-columns: repeat(auto-fit, minmax(345px, auto));
-
   grid-gap: 1rem;
   margin: 0;
   padding: var(--pad);
+  margin-top: -5px;
 }
 .seeAll {
   text-align: right;
-  margin-bottom: 15px;
-  margin-top: -25px;
+  margin-bottom: 8px;
+  margin-top: -14px;
 }
 .leftPane {
   padding: 0;
@@ -21,17 +20,9 @@
   border-radius: var(--border-radius);
   padding: 1.5rem;
   border: var(--card-border);
-  background-color: #e7f8fb;
+  background-color: rgb(231, 231, 251);
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-.card svg {
-  margin-right: 5px;
-}
-.card .info__item {
-  display: flex;
-  margin-bottom: 10px;
 }
 
 .lang {
