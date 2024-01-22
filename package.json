@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "chart.js": "^2.8.0",
     "@octokit/core": "^5.0.2",
     "gh-polyglot": "^2.3.3",
     "next": "14.0.4",

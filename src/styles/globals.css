@@ -82,6 +82,10 @@ h5 {
   font-size: 1rem;
 }
 
+.chart-container {
+  max-width: 300px;
+}
+
 /* footer */
 .footer {
   background-color: #878aed;

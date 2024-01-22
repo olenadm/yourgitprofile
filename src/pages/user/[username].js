@@ -8,6 +8,7 @@ import styles from "@/styles/User.module.css";
 import Stats from "@/components/Stats";
 import GhPolyglot from "gh-polyglot";
 import langColors from "@/components/utils/langColors";
+import Charts from "@/components/Charts";
 
 import { ArrowUpRight } from "react-feather";
 import UserInfo from "@/components/UserInfo";
@@ -87,6 +88,11 @@ export default function User() {
           <div className={styles.wrap}>
             <div className={styles.leftPane}>
               {userData && <UserInfo userData={userData} />}
+              <div className={styles.card}>
+                {langData && repoData && (
+                  <Charts langData={langData} repoData={repoData} />
+                )}
+              </div>
               <div className={styles.card}>
                 {langData && repoData && (
                   <div className={styles.language_bar}>
