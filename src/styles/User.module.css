@@ -22,8 +22,16 @@
   border: var(--card-border);
   background-color: rgb(231, 231, 251);
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 15px;   
 }
+
+.error {
+  text-align:center;
+  width:90%;
+  margin:25px auto;
+  background-color: rgba(216, 112, 147, 0.434);
+}
+
 
 .lang {
   padding: 6px 8px;

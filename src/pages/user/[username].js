@@ -10,8 +10,9 @@ import GhPolyglot from "gh-polyglot";
 import langColors from "@/components/utils/langColors";
 import Charts from "@/components/Charts";
 
-import { ArrowUpRight } from "react-feather";
+import { ArrowLeft, ArrowUpRight, Smile } from "react-feather";
 import UserInfo from "@/components/UserInfo";
+import Link from "next/link";
 
 export default function User() {
   const [userData, setUserData] = useState(null);
@@ -79,7 +80,11 @@ export default function User() {
   return (
     <>
       {error && error.active ? (
-        <p>Error</p>
+        
+          <div className={`${styles.card} ${styles.error}`}>
+            <h3>Error message scares people! <Smile/> </h3>
+            <Link href={"/"}> <ArrowLeft size={15}/> Lets go back</Link>
+            </div>
       ) : (
         <>
           <Header />
